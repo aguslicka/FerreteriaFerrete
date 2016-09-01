@@ -1,0 +1,32 @@
+<ion-view view-title="Precios">
+  <ion-content>
+    
+{{PrecioUno}}
+
+    <div class="list">
+  <label class="item item-input item-floating-label">
+    <span class="input-label">PrecioUno</span>
+    <input type="text" ng-model="PrecioUno" placeholder="Precio Uno">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">PrecioDos</span>
+    <input type="text" ng-model="PrecioDos" placeholder="Precio Dos">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">PrecioTres</span>
+    <input type="text" ng-model="PrecioTres" placeholder="Precio Tres">
+  </label>
+</div>
+
+<div class="button-bar bar-balanced">
+  <a class="button" ng-click="SumarPrecios(PrecioUno,PrecioDos,PrecioTres)">Suma</a>
+  <a class="button" ng-click="HacerPromedio(PrecioUno,PrecioDos,PrecioTres)" >Promedio</a>
+  <a class="button" ng-click="SumarIva(PrecioUno,PrecioDos,PrecioTres)" >Más IVA</a>
+</div>
+
+
+{{mensajeRespuesta}}
+
+
+  </ion-content>
+</ion-view>
